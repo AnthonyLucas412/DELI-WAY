@@ -1,0 +1,85 @@
+@startuml
+Class Program {
+Main
+}
+Class Userinterface{
+Userinterface():
+display():
+new Order():
+Exit():
+addSandwich():
+addDrink():
+addChips():
+Checkout():
+ConfirmOrder():
+CancelOrder();
+TotalPrice():
+getReceipt():
+}
+Class Order {
+int ID
+Customer customer
+List<Sandwich>
+List<Chips>
+List<Drinks>
+}
+
+Class Customer{
+String name;
+String phonenumber;
+
+}
+
+Class sandwich{
+ArrayList<Toppings>
+String breadType;
+int Size;
+Boolean toasted;
++Sandwich(String breadType,int Size, Boolean toasted)
+}
+Class Drinks{
+String flavor;
+Double price;
+String size;
+
++Drinks(String flavor , Double price, String size)
+
+}
+
+Class Chips{
+Double Price;
++Chips(Double price)
+}
+abstract class Toppings{
+-String name
+-boolean isExtra
++Toppings(String name,boolean isExtra)
+}
+Class PremiumToppings extends Toppings{
+double Price
+int size
+boolean isExtra
++PremiumToppings(String name, boolean isExtra, int size)
+}
+Class RegularToppings extends Toppings{
+boolean isExtra
++RegularToppings(String name,boolean isExtra)
+}
+Class Sauces extends RegularToppings{
+String name
+boolean isExtra
+
++Sauces(String name, boolean isExtra)
+}
+Class Sides extends RegularToppings{
+String name
+boolean isExtra
++Sides(String name, boolean isExtra)
+}
+
+
+
+
+
+
+@enduml
