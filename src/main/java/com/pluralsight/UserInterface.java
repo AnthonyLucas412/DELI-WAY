@@ -171,12 +171,12 @@ public class UserInterface {
     private static void addMeats() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("\nAdd Meats:");
-        System.out.println("Steak");
-        System.out.println("Ham");
-        System.out.println("Salami");
-        System.out.println("Roast beef");
-        System.out.println("Chicken");
-        System.out.println("Bacon");
+        System.out.println("1.Steak");
+        System.out.println("2.Ham");
+        System.out.println("3.Salami");
+        System.out.println("4.Roast beef");
+        System.out.println("5.Chicken");
+        System.out.println("6.Bacon");
         int meatsChoice = scanner.nextInt();
 
         String meatsType;
@@ -206,10 +206,10 @@ public class UserInterface {
             Scanner scanner = new Scanner(System.in);
 
             System.out.println("\nAdd Cheese:");
-            System.out.println("American");
-            System.out.println("Provolone");
-            System.out.println("Cheddar");
-            System.out.println("Swiss");
+            System.out.println("1.American");
+            System.out.println("2.Provolone");
+            System.out.println("3.Cheddar");
+            System.out.println("4.Swiss");
             System.out.println("Select Cheese type");
             int cheeseChoice = scanner.nextInt();
 
