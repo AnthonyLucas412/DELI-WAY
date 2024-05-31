@@ -13,6 +13,9 @@ public abstract class  Toppings {
         this.isExtra = isExtra;
     }
 
+    public Toppings(String name, boolean isExtra) {
+    }
+
     public String getName() {
         return name;
     }
