@@ -18,6 +18,11 @@ public class Order {
         this.drinks = new ArrayList<>();
     }
 
+    public Order() {
+
+    }
+
+
     public int getID() {
         return ID;
     }
@@ -42,5 +47,34 @@ public class Order {
     public void addDrinks(Drinks drinks){
         this.drinks.add(drinks);
     }
+
+    public double getSmallSandwichCount() {
+        return 0;
+    }
+
+    public double getMediumSandwichCount() {
+        return 0;
+    }
+
+    public double getLargeSandwichCount() {
+        return 0;
+    }
+
+    public double getSmallDrinkCount() {
+        return 0;
+    }
+
+    public double getMediumDrinkCount() {
+        return 0;
+    }
+
+    public double getLargeDrinkCount() {
+        return 0;
+    }
+
+    public double getChipsCount() {
+        return 0;
+    }
+
 }
 
